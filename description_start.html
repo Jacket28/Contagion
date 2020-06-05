@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+    <title>624-2 - HTML/CSS/JavaScript</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style_start.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+</head>
+<body>
+
+<div class="header">
+    <h1>CONTAGION</h1>
+    <p> Beware and you may survive...</p>
+</div>
+
+    <nav>
+<ul class="navbar">
+<li class="hamburger" >
+    <img src="ressources/images/hamburger_icon.svg" onclick="myFunction()">
+</li>
+    <div id="myLinks">
+    <a  href="description_start.html">Description</a>
+    <a  href="maquettes_start.html">Maquettes</a>
+    <a  href="mockup_start.html">Mockup</a>
+    <a  href="flux_start.html">Flux</a>
+    <a  href="journal_de_bord_start.html">Journal de bord</a>
+        <a href="game_start.html">Game 🎮</a>
+    </div>
+</ul>
+    </nav>
+    
+    
+
+
+
+
+
+<main>
+    <!-- Début zone pour votre contenu -->
+    <section id="articles">
+        <header>
+                <h2>Resistez à l'épidémie !</h2>
+                <p>Un jeu "made in" Valais créer par une petite équipe de l'HES SO Valais Wallis.</p>
+            </header>
+        <article>
+        <p>Notre équipe souhaite la bienvenue à tous les survivants. Comme mentionné plus haut, ce projet a été développé dans le cadre du cours de RIA du module 624-2 à l'HES SO Valais Wallis (<a href="http://www.hevs.ch/" style="color: red">http://www.hevs.ch/</a>).</p>
+
+        <p>Comme vous devez vous en doutez, notre jeu implique une notion d'épidémie. Vous n'êtes pas sans savoir que le début de l'année 2020 a été marqué par l'apprition du virus Covid-19. Voici donc notre façon de sensibiliser la population. </p>
+
+        <p>Dans ce jeu vidéo, vous incarnez <Strong>Jack Rick McMais</Strong>, un jeune homme de 17 ans qui est scolarisé à la Berkins High School sur la côte ouest des Etats-Unis. Il menait une vie plutôt normal d'un ado de son âge jusqu'au jour où, en se levant un matin, il remarque que quelque chose ne va pas. Ce qui était longtemps resté un délire de fiction est devenue réel... les infecté sont là ! Défendez-vous et peut-être pourrez-vous survivre à la contagion.</p>
+
+        <p>Le code source de l'application est disponible sur le <a href="https://github.com/" style="color: red">github du projet</a>.</p>
+
+
+        </article>
+    </section>
+    <aside>
+        <div>
+            <h3>L'équipe au complet</h3>
+            <ul class="team" id="box">
+                <p id="textbox1" ></p><strong>Kevin Coppey</strong>: <br/> Architecte CSS/HTML
+                <p><strong>Christopher Artero</strong>: <br/> Javascript</p>
+                <p><strong>Nelson Micheloud</strong>: <br/> Design</p>
+                <p><strong>Mickaël Puglisi</strong>:  <br/>Modelisation</p>
+            </ul>
+        </div>
+    </aside>
+    <!-- >Fin zone pour votre contenu -->
+</main>
+
+    <footer>
+        <img id="logo" src="ressources/images/logo.png" height="50">
+    </footer>
+
+</body>
+</html>

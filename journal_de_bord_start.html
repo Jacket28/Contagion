@@ -1,0 +1,247 @@
+<!doctype html>
+<html>
+    <script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+<head>
+    <title>624-2 - HTML/CSS/JavaScript</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style_start.css">
+</head>
+<body>
+
+<div class="header">
+    <h1>CONTAGION</h1>
+    <p> Beware and you may survive...</p>
+    </div>
+
+    <nav>
+<ul class="navbar">
+<li class="hamburger" >
+    <img src="ressources/images/hamburger_icon.svg" onclick="myFunction()">
+</li>
+    <div id="myLinks">
+    <a  href="description_start.html">Description</a>
+    <a  href="maquettes_start.html">Maquettes</a>
+    <a  href="mockup_start.html">Mockup</a>
+    <a  href="flux_start.html">Flux</a>
+    <a  href="journal_de_bord_start.html">Journal de bord</a>
+     <a href="game_start.html">Game 🎮</a>
+    </div>
+</ul>
+    </nav>
+
+
+<main>
+    <!-- Début zone pour votre contenu -->
+    <section>
+         <header>
+                <h2>Notre progression</h2>
+                <p>Ci-dessous, vous trouverez notre journal de bord où sont mentionnées toutes les étapes du projets effectuées par chaque personne composant notre groupe</p>
+            </header>
+
+        <table id="table">
+
+        <tr>
+            <th>Date</th>
+            <th>Prénom et nom</th>
+            <th>Tâche</th>
+            <th>Commentaire</th>
+            <th>Durée</th>
+        </tr>
+
+        <tr>
+            <td>25.02.2020</td>
+            <td>Tout le monde</td>
+            <td>Création du lien GitHub + Conceptualisation du jeu</td>
+            <td>Mickaël a crée le lien Github et c'est à ce moment également que nous avions commencé notre brainstorming</td>
+            <td>1h</td>
+        </tr>
+
+        <tr>
+            <td>27.02.2020</td>
+            <td>Christopher Artero et Nelson Micheloud</td>
+            <td>Recherche d’information sur internet par rapport aux possibilités d’implémentations</td>
+            <td>La recherche d'information a été cruciale pour savoir si nous pourrions réaliser notre projet</td>
+            <td>1h</td>
+        </tr>
+
+        <tr>
+            <td>01.03.2020</td>
+            <td>Nelson Micheloud et Mickaël Puglisi</td>
+            <td>Suivi d’un tuto pour apprendre plus en profondeur le JavaScript</td>
+            <td>Etant donnée que Christopher a déjà eu des cours de JS, nous voulions nous mettre à niveau avec des tutos</td>
+            <td>1h30</td>
+        </tr>
+        <tr>
+            <td>03.03.2020</td>
+            <td>Kevin Coppey</td>
+            <td>Réalisation du contenu des pages du site web</td>
+            <td>Très tôt, j'ai décidé de commencer à faire le site web. J'avais quelques connaissances de base qui m'ont permis de prendre la responsabilité de me charger du site web </td>
+            <td>1h</td>
+        </tr>
+
+        <tr>
+            <td>10.03.2020</td>
+            <td>Kevin Coppey</td>
+            <td>Suite de la réalisation du contenu du site web</td>
+            <td>Après ce premier cours de CSS + HTML, j'ai tener d'implémenter la media query. J'ai également développé le design du site</td>
+            <td>1h</td>
+        </tr>
+        <tr>
+            <td>10.03.2020</td>
+            <td>Christopher Artero</td>
+            <td>Recherche d'asset pour le jeu</td>
+            <td>Etant donné que Mickaël s'occupe de la gestion de la modélisation de l'environnement, j'ai décidé de lui donner un coup de main en recherant des sprites et modèles utilisables pour notre jeu</td>
+            <td>1h</td>
+        </tr>
+
+            <tr>
+            <td>10.03.2020</td>
+            <td>Mickaël Puglisi</td>
+            <td>Test de déplacement du personnage et création de la première carte</td>
+            <td>Je voulais savoir comment concrétement se passer la création d'une map, donc je me suis rensiegné et je suis tombé sur un logiciel très utile pour notre projet. J'ai également créer une matrice afin de faire déaplcer le personnage sur cette carte</td>
+            <td>3h</td>
+        </tr>
+
+
+        <tr>
+            <td>17.03.2020</td>
+            <td>Kevin Coppey et Nelson Micheloud</td>
+            <td>Conception des niveaux</td>
+            <td>Nous voulions prendre un peu d'avance en créant des les premiers Mockups qui seront disponible sur le site. De ce fait nous avons conçu les niveaux de la maison, l'école et l'hôpital </td>
+            <td>2h</td>
+        </tr>
+
+        <tr>
+            <td>19.03.2020</td>
+            <td>Kevin Coppey</td>
+            <td>Développement du CSS du site</td>
+            <td>Après plusieurs séances de suivi tutoriaux sur le CSS, j'ai décidé d'appliquer un footer statique sur la page et de mieux gérer le style en général </td>
+            <td>1h</td>
+        </tr>
+        <tr>
+            <td>24.03.2020</td>
+            <td>Mickaël Puglisi</td>
+            <td>Création des assets pour les personnages principaux</td>
+            <td>J'ai trouvé plusieurs assets intéressants sur internet que je compte utiliser pour le projet, il ne me reste plus qu'à les implémenter</td>
+            <td>1h</td>
+        </tr>
+
+        <tr>
+            <td>31.03.2020</td>
+            <td>Tout le monde</td>
+            <td>Finalisation de la 1ère partie du projet</td>
+            <td>Nous nous sommes tous réunis dans le but de faire un dernier check-up avant le 1er rendu du projet</td>
+            <td>2h</td>
+        </tr>
+        <tr>
+            <td>07.04.2020</td>
+            <td>Nelson Micheloud</td>
+            <td>Création de la page du jeu</td>
+            <td>J'ai décidé de personnaliser la page du jeu afin de créer un design compatible avec notre jeu (sang etc.)</td>
+            <td>2h30</td>
+        </tr>
+        <tr>
+            <td>14.04.2020</td>
+            <td>Nelson Micheloud</td>
+            <td>Création de la page index</td>
+            <td>Il fallait créer un canevas pour importer le jeu dans une page HTML. De plus j'ai commencé à m'attaquer à la prise en charge du script pour d'autres appareils (bouton "finger") </td>
+            <td>2h</td>
+        </tr>
+        <tr>
+            <td>21.04.2020</td>
+            <td>Mickael Puglisi et Nelson Micheloud</td>
+            <td>Finalisation du script mobile</td>
+            <td>Le jeu fonctionne sur mobile avec les touches "finger" </td>
+            <td>2h</td>
+        </tr>
+        <tr>
+            <td>28.04.2020</td>
+            <td>Christopher Artero</td>
+            <td>Gérer les balles du joueur</td>
+            <td>Ce fût un travail titanesque de gérer les tirs du joueur. Il fallait créer une hitbox pour les zombies et la gérer en conséquence également</td>
+            <td>8h</td>
+        </tr>
+        <tr>
+            <td>05.05.2020</td>
+            <td>Christopher Artero et Mickaël Puglisi</td>
+            <td>Correction des bugs correspondant aux collisions et aux balles</td>
+            <td>Il restait encore des bugs à corriger concernant les collisions avec la map du jeu</td>
+            <td>2h</td>
+        </tr>
+        <tr>
+            <td>12.05.2020</td>
+            <td>Kevin Coppey et Nelson Micheloud</td>
+            <td>Création des autres maps</td>
+            <td>Nous avons créer d'autres maps pour rendre le jeu plus vivant (School,Hospital,Rooftop)</td>
+            <td>6h</td>
+        </tr>
+        <tr>
+            <td>19.05.2020</td>
+            <td>Christopher Artero et Mickaël Puglisi</td>
+            <td>Création du boss finale</td>
+            <td>Cette comprends la recherche d'assets pour afficher le boss et leurs implémentations dans le code</td>
+            <td>3h</td>
+        </tr>
+        <tr>
+            <td>26.05.2020</td>
+            <td>Christopher Artero et Nelson Micheloud</td>
+            <td>Correction de bug concernant le boss</td>
+            <td>Le boss finale comportait encore des bugs de collision avec le joueur</td>
+            <td>1h30</td>
+        </tr>
+        <tr>
+            <td>29.05.2020</td>
+            <td>Nelson Micheloud</td>
+            <td>Création du score</td>
+            <td>J'ai créer le tableau de score pour donner au joueur la possibilité de s'améliorer à chaques parties</td>
+            <td>2h30</td>
+        </tr>
+       <tr>
+            <td>01.06.2020</td>
+            <td>Kevin Coppey</td>
+            <td>Drag and drop</td>
+            <td>Je suis allé me renseigner concernant le Drag and Drop pour l'implémenter dans le code</td>
+            <td>2h</td>
+        </tr>
+        <tr>
+            <td>03.06.2020</td>
+            <td>Christopher Artero et Mickaël Puglisi</td>
+            <td>Utilisation du JQuery</td>
+            <td>Nous avons remarqué assez tardivement qu'il fallait intégrer du Jquery dans notre projet. Cela nous a demandé de changer en partie notre code</td>
+            <td>2h</td>
+        </tr>
+        <tr>
+            <td>04.06.2020</td>
+            <td>Mickaël Puglisi et Kevin Coppey</td>
+            <td>Geolocation</td>
+            <td>Nous avons implémenter dans le score la possibilité de retrouver le pays de la personne qui joue en Suisse</td>
+            <td>2h</td>
+        </tr>
+         <tr>
+            <td>05.06.2020</td>
+            <td>Tout le monde</td>
+            <td>Finalisation</td>
+            <td>Nous nous sommes finalement réunis afin de corriger tous ensemble les petis défauts du site et du code</td>
+            <td>3h</td>
+        </tr>
+        </table>
+    </section>
+    <!-- >Fin zone pour votre contenu -->
+</main>
+
+    <footer>
+        <img id="logo" src="ressources/images/logo.png" height="50">
+    </footer>
+
+</body>
+</html>

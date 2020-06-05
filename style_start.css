@@ -1,0 +1,530 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,400,400i,700|Roboto+Slab:700');
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+  position:relative;
+  min-height: 100%;
+}
+
+
+main {
+    display: flex;
+    height: 90%;
+}
+
+gameMain {
+    display:  flex;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/background5.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+
+}
+
+section{
+    margin-top: 50px
+}
+
+
+
+
+p {
+    text-align: justify;
+    margin-right: 100px;
+}
+
+aside{
+    min-width: 20%;
+    margin-bottom: 50px;
+}
+
+/*Style the in-game cursor*/
+game{
+    cursor: url(images/cursor.cur), auto;
+    outline: 10px ridge darkred;
+    width: 450px;
+
+}
+
+/*Superpose phone buttons on game */
+
+.child1 {
+    position: absolute;
+
+
+}
+
+.child2 {
+    z-index: 1;
+    width: 450px;
+}
+
+#phoneButtons{
+    position: relative;
+    top: 180px;
+    right: -10px;
+}
+
+#up{
+    position: relative;
+    left: 50px;
+
+}
+
+#fire{
+    position: relative;
+    left: 230px
+}
+
+/*display buttons for phone sreen*/
+@media screen and (min-width: 900px), screen and (min-height:414px){
+    div.child2{
+        display: none;
+    }
+}
+
+
+h3 {
+    padding-left: 1px;
+}
+
+#table {
+    margin-bottom: 100px;
+}
+
+#box {
+    outline: 10px ridge darkred;
+    background-color: black;
+    color: white;
+    outline-offset: -5px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-right: 100px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 1);
+
+}
+
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  border: 0;
+  max-width: 2560px;
+    margin: 0 auto;
+    line-height: 1.1em;
+    background-color: white;
+    margin: 0 0 100px;
+    /* bottom = footer height */
+    padding: 25px;
+}
+
+#youtube {
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+
+
+html, body {
+  padding:0;
+   margin:0;
+    height:100%;
+  }
+
+
+
+body > header {
+    text-align: center;
+    color: white;
+    padding: 5px 0 0;
+    background: #feccb1;
+    background: -moz-linear-gradient(top, #feccb1 0%, #f17432 61%, #f17432 61%, #ea5507 62%, #fb955e 100%);
+    background: -webkit-linear-gradient(top, #feccb1 0%, #f17432 61%, #f17432 61%, #ea5507 62%, #fb955e 100%);
+    background: linear-gradient(to bottom, #feccb1 0%, #f17432 61%, #f17432 61%, #ea5507 62%, #fb955e 100%);
+}
+
+/* Style the header */
+.header {
+  padding: 50px;
+  text-align: center;
+  background: #000;
+  color: white;
+  padding-bottom: 10px;
+  width: 100%;
+
+
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+    font-family: fantasy ;
+    letter-spacing: 20px;
+    font-size: 50px;
+    margin-bottom: 1px
+}
+
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+  margin-bottom: 0px;
+  margin-top :0px;
+}
+
+
+/*Style of buttons*/
+
+button {
+  background-color: darkred;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  font-family:fantasy;
+}
+
+
+Form1 button {
+  background-color: darkred;
+  border: none;
+  color: white;
+  margin-left: 5%;
+  border-radius: 50%;
+  padding: 32px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 32px;
+  font-family:fantasy;
+  cursor: url(images/cursor.cur), auto;
+}
+
+Form1 button:hover {
+  background-color: black; /* Green */
+
+}
+
+#myLinks{
+    display: inline-block;
+}
+
+
+
+table
+{
+    border-collapse: collapse;
+}
+td, th /* Mettre une bordure sur les td ET les th */
+{
+    border: 1px solid black;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 5px 15px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+nav .navbar a.right {
+  float: right;
+}
+
+.rotateimg90{
+  -webkit-transform:rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  width:1000; height:200;
+}
+
+div img{
+  margin-left: 200px;
+}
+
+.images{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 100px;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+footer {
+  margin-top: 0px;
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+.menu-toggle{
+  float: right;
+  line-height: 50px;
+  font-size: 24px;
+  display:none;
+  cursor: pointer;
+}
+
+    img#logo {
+    min-width: 125px;
+    width: 20%;
+    max-width: 250px;
+}
+
+.hamburger {
+    display:none;  
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    main {
+        flex-direction: column;
+        margin-left: 30px;
+    }
+    
+    gameMain {
+        flex-direction : column;
+        margin: left : 30px;
+        
+    }
+    
+    .bestScore{
+        list-style: none;
+    
+        position: absolute;
+        top: 110%;
+        width: 20%;
+        margin-left: 20px;
+    }
+    
+    #winners{
+        margin-left: -80px;
+    }
+    
+    #scoreTitle{
+        position: absolute;
+        top: 100%;
+    }
+    
+    #youtube{
+        position: absolute;
+        left: 5%;
+    }
+
+    ul {
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    ul .menu-toggle {
+        display: block;
+        margin: 0 auto 10px;
+    }
+
+    ul li img {
+        width: 32px;
+        height: 32px;
+        margin: 4px 0 0 0 ;
+        padding: 0;
+        display: block;
+    }
+    
+        ul li {
+          margin-left: 43%
+    }
+    .header {
+        padding: 10%
+    }
+    .header h1 {
+    font-size: 35px;
+    font-family: fantasy ;
+    letter-spacing: 20px;
+    margin-bottom: 30px;
+    margin-left: -10px;
+}
+    p {
+    text-align: justify;
+    margin-right: 40px;
+}
+    #fluximg {
+        max-width: 80%;
+    }
+
+    .maquetteimg{
+        max-width: 80%;
+        margin-left: -10%
+    }
+    .mockupimg{
+        max-width: 80%;
+        margin-left: -10%
+    }
+    #table {
+        width : 100%;
+        table-layout: fixed;
+        margin-left: -25px;
+        word-wrap:break-word;
+        font-size: 15px;
+    }
+    
+    Form1 button {
+        position: absolute;
+        top: 80%;
+}
+    
+    
+    
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        flex-direction: column;
+        margin-left: 30px;
+    }
+    
+    gameMain {
+        flex-direction : column;
+        margin: left : 30px;
+        
+    }
+    
+    #youtube{
+        flex-direction: column;
+        top:720px;
+        margin-left:0px;
+        width:90%;
+        margin-bottom: 80px;
+    }
+    
+    .team{
+        margin-bottom: 70px;
+    }
+    
+    #scoreTitle{
+        position: absolute;
+        top: 530px;
+        left: 20px;
+    }
+    
+    #logo{
+        margin-top:10px;
+    }
+    
+    Form1 button {
+        position: absolute;
+        top: 425px;
+    }
+    
+    .bestScore{
+        position:absolute;
+        top:600px;
+        margin-top : 0px;
+        list-style: none;
+        width: 90%;
+        margin-left: 20px;
+    }
+
+    ul {
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    ul .menu-toggle {
+        display: block;
+        margin: 0 auto 10px;
+    }
+
+    ul li img {
+        width: 32px;
+        height: 32px;
+        margin: 4px 0 0 0 ;
+        padding: 0;
+        display: block;
+    }
+    
+        ul li {
+          margin-left: 43%
+    }
+    .header {
+        padding: 10%
+    }
+    .header h1 {
+    font-size: 35px;
+    font-family: fantasy ;
+    letter-spacing: 20px;
+    margin-bottom: 30px;
+    margin-left: -10px;
+}
+    p {
+    text-align: justify;
+    margin-right: 40px;
+}
+    .hamburger {
+    display: block;  
+}
+    #myLinks {
+        display: none;   
+    }
+    #myLinks a {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    #fluximg {
+        max-width: 80%;
+    }
+
+    .maquetteimg{
+        max-width: 80%;
+        margin-left: -10%
+    }
+    .mockupimg{
+        max-width: 80%;
+        margin-left: -10%
+    }
+    #table {
+        width : 100%;
+        table-layout: fixed;
+        margin-left: -25px;
+        word-wrap:break-word;
+        font-size: 15px;
+    }
+    
+    footer{
+        height: 10%;
+    }
+     img#logo {
+    
+    
+    max-width: 25%;
+}
+
+    
+    
+    
+}
+
+
+

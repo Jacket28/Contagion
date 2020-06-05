@@ -1,0 +1,66 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style_start.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="dragndrop.js">
+    </script>
+</head>
+	
+
+
+
+<body scroll="no" style="overflow: hidden">
+
+<div class="gameScreen">
+            <div class="child1">
+                <game id="game">
+                    <!--Script du jeux-->
+                    <script src="player.js">document.body.style.zoom="250%"</script>
+                    <canvas id="cv"></canvas>
+                    <progress id="health" value="1000" max="1000" ></progress>
+                    <div id="canvasdropper" ondrop="drop()" class="dropper">
+                        <img id="finishhim" style="position: absolute; top: 0; left: 0; margin-left: 0; visibility: hidden; width: 450 ;height: 300" src="images/finishHim.jpg">
+                    </div>
+                    
+                    <button id="retry" class="button" onclick="restart()">Retry</button>
+                    
+                    <button id="next" class="button" onclick="next()">Next</button>
+                    <script>$("#retry").css("visibility", "hidden"); $("#next").css("visibility", "hidden");</script>
+                    <p>
+                    <button id="finish" class="button" style="visibility: hidden" onclick="end_game()">Finish</button>
+                    <label id="enterName" style="visibility: hidden" >Enter your name to finish :</label><br>
+                    <input type="text" maxlength="8" id="name" style="visibility: hidden" required><br>
+                    </p>
+                    <p id="textKnife" style="visibility: hidden">Drag me inside the boss ! </p>
+                </game>
+                <div id="dropperdrag" class="dropper" >
+                    <img class="draggable" src="images/knife.png">
+                    
+                    <script>
+                        
+                        $("#dropperdrag").hover(function(){
+                        $("#textKnife").slideUp(1000).slideDown(1000);
+                            });</script>
+                    </div>
+                
+            </div>
+
+            <div class="child1 child2">
+                <phoneButtons id="phoneButtons">
+                    <p><button id="up" value="38">👆🏻</button></p>
+                    <p>
+                        <button id="left" value="37">👈🏻</button>
+                        <button id="down" value="40">👇🏻</button>
+                        <button id="right" value="39">👉🏻</button>
+                        <button id="fire">🔫</button>
+                    </p>
+                </phoneButtons>
+            </div>
+        </div>
+</body>
+
+
+

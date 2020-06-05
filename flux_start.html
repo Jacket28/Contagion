@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+    <title>624-2 - HTML/CSS/JavaScript</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style_start.css">
+</head>
+    <script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+    
+<body>
+
+<div class="header">
+    <h1>CONTAGION</h1>
+    <p> Beware and you may survive...</p>
+    </div>
+
+       <nav>
+<ul class="navbar">
+<li class="hamburger" >
+    <img src="ressources/images/hamburger_icon.svg" onclick="myFunction()">
+</li>
+    <div id="myLinks">
+    <a  href="description_start.html">Description</a>
+    <a  href="maquettes_start.html">Maquettes</a>
+    <a  href="mockup_start.html">Mockup</a>
+    <a  href="flux_start.html">Flux</a>
+    <a  href="journal_de_bord_start.html">Journal de bord</a>
+        <a href="game_start.html">Game 🎮</a>
+    </div>
+</ul>
+    </nav>
+    
+
+
+<main>
+    <!-- Début zone pour votre contenu -->
+    <section id="articles">
+        <img id="fluximg" src="ressources/images/Flux.png">
+    </section>
+    <!-- >Fin zone pour votre contenu -->
+</main>
+
+    <footer>
+        <img id="logo" src="ressources/images/logo.png" height="50">
+    </footer>
+
+</body>
+</html>

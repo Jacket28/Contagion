@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+    <title>624-2 - HTML/CSS/JavaScript</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style_start.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+<script>
+    function myFunction() {
+      /*var bestScore = localStorage.getItem("finalScore");
+      var playerName = localStorage.getItem("playerName");
+      var countryPlayer = localStorage.getItem("maPosition");*/
+      var winners = getObject("listScore");
+
+      /*document.getElementById("bestScore").innerHTML = bestScore;
+      document.getElementById("playerName").innerHTML = playerName;
+      document.getElementById("countryPlayer").innerHTML = countryPlayer;*/
+      
+      winners.sort((a,b)=>b.score-a.score);
+      var winnerslist = winners.slice(0,3);
+       
+      ul = document.createElement('ul');
+      ul.style.listStyle = "none";
+      ul.style.marginLeft = "-30px";
+      br = document.createElement('br');
+      document.getElementById('winners').appendChild(ul);
+
+      winnerslist.forEach(function (item) {
+      let li = document.createElement('li');
+          li.appendChild(br);
+      ul.appendChild(li);
+      
+
+      li.innerHTML +=  item.score + " " + item.firstName + " " +  item.position;
+      });
+
+    }
+    
+    function start_game(){
+        window.open('index.html','_blank')
+        window.close(); 
+    }
+    function burger() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    function getObject(key) {
+    return JSON.parse(localStorage.getItem(key))
+    }
+</script>
+
+</head>
+    
+    
+<body onload="myFunction()" style="background-color: black">
+
+
+<div class="header">
+    <h1>CONTAGION</h1>
+    <p> Beware and you may survive...</p>
+</div>
+
+    <nav>
+<ul class="navbar">
+<li class="hamburger" >
+    <img src="ressources/images/hamburger_icon.svg" onclick="burger()">
+</li>
+    <div id="myLinks">
+    <a  href="description_start.html">Description</a>
+    <a  href="maquettes_start.html">Maquettes</a>
+    <a  href="mockup_start.html">Mockup</a>
+    <a  href="flux_start.html">Flux</a>
+    <a  href="journal_de_bord_start.html">Journal de bord</a>
+     <a href="game_start.html">Game 🎮</a>
+    </div>
+</ul>
+    </nav>
+
+
+
+
+
+    <gameMain>
+    <!-- Début zone pour votre contenu -->
+    <section id="articles">
+        <header>
+                <h2>🧟‍♂️ Resistez à l'épidémie et dégommez du zombie !!! 🧟‍♂️</h2>
+                <p>Déplacez-vous à l'aide des touches A, W, S, D du clavier et tirez avec la souris.</p>
+        </header>
+
+        <Form1 id="playForm">
+
+                <button id="idPlayButton" onclick="start_game()" >Play</button>
+            
+        </Form1>
+        
+        <iframe id="youtube" width="560" height="315" src="https://www.youtube.com/embed/0RhJpxK3T_4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+    </section>
+            
+    
+    <aside>
+        <div>
+            <h3 id="scoreTitle">Best Scores</h3>
+            <ul class="bestScore" id="box">
+                <!--<p>Nom : <span id="playerName"></span> <br/> Score : <span id="bestScore"></span> <br/> Pays : <span id="countryPlayer"/></p>-->
+                <li id="winners">
+                </li>
+            </ul>
+        </div>
+    </aside>
+        
+</gameMain>
+    <!-- >Fin zone pour votre contenu -->
+
+
+    <footer>
+        <img id="logo" src="ressources/images/logo.png" height="50">
+    </footer>
+
+</body>
+</html>

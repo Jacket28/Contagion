@@ -1,0 +1,127 @@
+.button {
+  position:absolute;
+  background-color: darkred; /* Green */
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  left:180;
+  top:140;
+      -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#finish {
+  position:absolute;
+  background-color: darkred; 
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  left:180;
+  top:240;
+      -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#enterName {
+  position:absolute;
+  background-color: darkred; 
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  left:10;
+  top:190;
+      -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#name {
+  position:absolute;
+  background-color: darkred; 
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  left:215;
+  top:190;
+      -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#health {
+	position: absolute;
+	left : 40%;
+	top: 10px;
+    margin-top: 0px;
+	background-color: red;
+	visibility: hidden;
+}
+
+
+.gif{
+	position :absolute;
+	left:0;
+	height: 300;
+	width : 450;
+
+}
+
+.dropper {
+    width: 60px;
+    height: 60px;
+    transition: all 200ms linear;
+}
+
+#dropperdrag {
+    position: absolute;
+    top: 70%;
+    left: 500;
+    visibility: hidden;
+}
+
+#canvasdropper {
+    position: absolute;
+    width: 450;
+    height: 300;
+    top: 0;
+    visibility: hidden;
+}
+
+.draggable {
+    display: inline-block;
+    margin: 20px 10px 10px 20px;
+    padding-top: 20px;
+    width: 70px;
+    height: 70px;
+    cursor: move;
+    transition: all 200ms linear;
+    user-select: none;
+}
+
+
+
+
+/*@media screen and (max-width: 200px){
+	#cv{
+		height: 500;
+		width: 500;
+	}
+}*/
