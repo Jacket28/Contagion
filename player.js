@@ -757,7 +757,7 @@ function Game() {
 	//ATTENTION
 	// Each map has different png for bgtiles, objtiles and monsters .. load based on map
 	this.load_map_ressources = function() {
-        navigator.geolocation.getCurrentPosition(onSuccess, onError);
+        doGeolocalisation();
 	
 		var dw = this;
 		var imagePath = "images/tiles";
@@ -1491,20 +1491,33 @@ drag = function() {
 
 
 
-onSuccess = function( position){
-        var latitude= position.coords.latitude;
-        var longitude= position.coords.longitude;
+OnSuccess = function (coord) {
+	let xhttp = new XMLHttpRequest(); //créa une requete xml
+	xhttp.onreadystatechange = function () { //callback
+		// Retour AJAX
+		if (xhttp.readyState === 4 && (xhttp.status === 200 || xhttp.status === 0)) {
+			let countryTest = JSON.parse(xhttp.responseText);
+                country = countryTest.countryName;
+		}
+	};
+	xhttp.open("GET", `http://api.geonames.org/countryCodeJSON?lat=${coord.coords.latitude}&lng=${coord.coords.longitude}&username=jacket28`,
+		true); //API --> Country
+	xhttp.send();
+}
 
-        //Is the player in switzerland
-        if ((latitude>=45.828465) && (latitude<=48.96667) && (longitude>=5.971636) && (longitude<=10.492014)){ 
-            country = "SUISSE" 
+doGeolocalisation = function () {
+	if (navigator.geolocation) // Si le navigateur prend en compte la géolocalisation
+	{
+		navigator.geolocation.getCurrentPosition(OnSuccess, onError); //callback une fonction qui est appeler en retour
+	} else {
+		failedGeoloc();
+	}
+}
 
-        } else  country = "not from switzerland"; //Exterior
-    }
-
-function onError(error) { 
-    country = "unknown country";
-} // Unknown
+onError = function (){
+	player.country.name = "inconnu";
+	player.country.code = "EU";
+}
 
 Storage.prototype.setObj = function(key, obj) {
     return this.setItem(key, JSON.stringify(obj))
