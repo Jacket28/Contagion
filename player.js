@@ -1397,7 +1397,7 @@ next = function(){
 
 document.addEventListener("DOMContentLoaded", function() {
     var game = new Game();
-    levelplayed = 4;
+    levelplayed = 1;
     game.init("0" + levelplayed);
 });
 
